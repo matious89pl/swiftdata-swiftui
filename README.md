@@ -20,28 +20,57 @@ The skill uses **progressive disclosure**: the agent loads only the SKILL.md ove
 
 ## Installation
 
-### Cursor (personal)
+### Using `npx skills` (recommended)
 
-Copy the skill folder into your personal skills directory:
+The [skills CLI](https://skills.sh) auto-detects your installed coding agents and places the skill in the correct directory. Supports 35+ agents including Cursor, Codex, Claude Code, and more.
+
+Install globally (available across all your projects):
 
 ```bash
-cp -r swiftdata-swiftui ~/.cursor/skills/
+npx skills add matious89pl/swiftdata-swiftui -g
 ```
 
-### Cursor (project-scoped)
-
-Copy into your project's `.cursor/skills/` directory to share with collaborators:
+Install into the current project (shared with collaborators via git):
 
 ```bash
-cp -r swiftdata-swiftui /path/to/your-project/.cursor/skills/
+npx skills add matious89pl/swiftdata-swiftui
 ```
 
-### Codex
-
-Copy the skill folder into your Codex skills directory:
+Target a specific agent:
 
 ```bash
-cp -r swiftdata-swiftui ~/.codex/skills/
+npx skills add matious89pl/swiftdata-swiftui -g -a cursor
+npx skills add matious89pl/swiftdata-swiftui -g -a codex
+```
+
+Verify installation:
+
+```bash
+npx skills list
+```
+
+> **Tip:** After installing, restart your agent to pick up the new skill.
+
+### Manual installation
+
+If you prefer to install manually, clone the repo directly into the appropriate skills directory.
+
+**Cursor (personal):**
+
+```bash
+git clone https://github.com/matious89pl/swiftdata-swiftui.git ~/.cursor/skills/swiftdata-swiftui
+```
+
+**Cursor (project-scoped):**
+
+```bash
+git clone https://github.com/matious89pl/swiftdata-swiftui.git .cursor/skills/swiftdata-swiftui
+```
+
+**Codex:**
+
+```bash
+git clone https://github.com/matious89pl/swiftdata-swiftui.git ~/.codex/skills/swiftdata-swiftui
 ```
 
 ## When Does It Activate?
