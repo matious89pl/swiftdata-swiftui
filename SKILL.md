@@ -1,6 +1,6 @@
 ---
 name: swiftdata-swiftui
-description: SwiftData guidance for SwiftUI apps: model design with @Model, container/context setup, querying with @Query and FetchDescriptor, migrations with SchemaMigrationPlan, and iCloud/CloudKit sync. Use when implementing, reviewing, or troubleshooting SwiftData persistence in SwiftUI, including best practices and iCloud setup.
+description: 'SwiftData guidance for SwiftUI apps: model design with @Model, container/context setup, querying with @Query and FetchDescriptor, migrations with SchemaMigrationPlan, and iCloud/CloudKit sync. Use when implementing, reviewing, or troubleshooting SwiftData persistence in SwiftUI, including best practices and iCloud setup.'
 ---
 
 # SwiftData SwiftUI
